@@ -1,26 +1,26 @@
-# AWSApi
+# Awsapi
 
 ## Introduction
 
-Provides an interface to Amazon API for fetching Amazon product data as a SimpleXMLElement in a CodeIgniter application.
+Provides a basic but functional interface to Amazon's API for fetching Amazon product data as a SimpleXMLElement Object in a CodeIgniter application.
 
 Based on work by Sameer Borate, see: http://www.codediesel.com/php/accessing-amazon-product-advertising-api-in-php/
 You will need a public key, private key and an associates tag to use the API which you can request for free from Amazon.
 
 ## Setup
 
-* Save the __CI_AWSProductAPI__ folder into your CodeIgniter application's "libraries" folder.
+* Save the awsapi.php, license and README files into a folder in your CodeIgniter application's "libraries" folder.
 * Load the class as usual in your own controllers:
 
 	public function __construct() {
-		$this->load->('CI_AWSProductAPI/CI_AWSProductAPI');
+		$this->load->('awsapi');
 	}
 
 * You will need a public key, private key and an associates tag to use the API which you can request for free from Amazon.
 
 ## Usage:
 
-	$api = new CI_AWSProductAPI();
+	$api = new Awsapi();
 	$opts = array(
 		'public_key' => 'abcdEFGhijKLmNoPQ12345'
 		'private_key' => 'aX1_+9908iHHjgklvdg7'
